@@ -14,7 +14,7 @@ services:
     volumes:
       - wordpress:/var/www/html
       - ./data:/var/www/html/wp-content
-      #- ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+      - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
 
   db:
     image: mysql:5.7
